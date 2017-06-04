@@ -1,0 +1,30 @@
+{
+  "ServerPassword": "123456",
+  "ServerPort": "5244",
+  "EnableIPV6Support": true,
+  "EnableMode1": true,
+  "EnableMode2": true,
+  "Mode2UdpAliveTime":5,
+  "Debug":true,
+  "Mode2Config": [
+    {
+      "RemoteAddr": "45.32.34.191",
+      "RemotePort": "80",
+      "Protocol":"TCP",
+      "LocalPort": "80",
+      "HTTPHeaderHostReplace":"crab.pub"
+    },
+    {
+      "RemoteAddr": "45.32.34.191",
+      "RemotePort": "22",
+      "Protocol":"TCP",
+      "LocalPort": "23"
+    },
+    {
+      "RemoteAddr": "114.114.114.114",
+      "RemotePort": "53",
+      "Protocol":"UDP",
+      "LocalPort": "53"
+    }
+  ]
+}
